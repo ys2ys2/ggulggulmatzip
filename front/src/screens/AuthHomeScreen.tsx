@@ -16,7 +16,7 @@ function AuthHomeScreen({navigation}: AuthHomeScreenProps) {
       <Image
         resizeMode="contain"
         style={styles.image}
-        source={require('../assets/moon.jpg')}
+        source={require('../assets/appLogo.png')}
         />
       </View>
       <View style={styles.buttonContainer}>
@@ -37,13 +37,13 @@ function AuthHomeScreen({navigation}: AuthHomeScreenProps) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: 30,
+    margin: 40,
     alignItems: 'center',
   },
 
   imageContainer: {
     flex: 1.5,
-    width: Dimensions.get('screen').width / 2,
+    width: Dimensions.get('screen').width,
   },
 
   image: {
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
 
   buttonContainer: {
     flex: 1,
-    gap: 10,
+    gap: 15,
   },
 });
 
